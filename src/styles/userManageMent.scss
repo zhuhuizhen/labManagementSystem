@@ -1,0 +1,242 @@
+.userManageMent{
+     >>>.el-card__body {
+        padding: 0;
+      }
+      >>>.el-collapse {
+        border-bottom: 0;
+        border-top: 0;
+      }
+      >>>.el-collapse-item__wrap {
+        background: transparent;
+        border-bottom: 0;
+      }
+      >>>.el-collapse-item__header {
+        background: transparent;
+        border-bottom: 0;
+        font-family:'微软雅黑' !important;
+        font-weight: 400;
+        color: #00EEEE;
+        opacity: 0.9;
+      }
+      >>>.el-textarea__inner {
+        background-color: transparent;
+        font-family: '微软雅黑' !important;
+        font-weight: 400;
+        color:rgba(255,255,255,1);
+        border:1px solid rgba(80,220,245,0.7);
+        &:focus {
+          border:1px solid rgba(80,220,245,1);
+        }
+      }
+      >>>.el-input--small .el-input__inner {
+        background-color: transparent;
+        font-family:'微软雅黑'!important;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        border:1px solid rgba(80,220,245,0.7);
+        &:focus {
+          border:1px solid rgba(80,220,245,1);
+        }
+      }
+      >>> .el-input--small.is-focus .el-input__inner {
+        background-color: transparent;
+        font-family:'微软雅黑' !important;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        border:1px solid rgba(80,220,245,1);
+      }
+      >>> .el-form-item__label {
+        font-family: '微软雅黑 ' !important;
+        font-weight: 400;
+        color: #00EEEE;
+        // opacity: 0.9;
+      }
+      >>>input::-webkit-input-placeholder {
+        opacity: 0.5;
+      }
+      >>> textarea::-webkit-input-placeholder {
+        opacity: 0.5;
+      }
+      .el-input{
+        font-size: 12px;
+        // input{
+        //   padding-left: 10px;
+        // }
+      }
+      .el-form-item__label{
+        font-size: 12px;
+      }
+
+      .el-tree{
+        background: transparent;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        min-width: 100%;
+        cursor: default;
+        display: inline-block !important;
+        >>>.el-checkbox__inner{
+                background: transparent;
+                border-color:#00eeee;
+                margin-top: 10px;
+            }
+        >>>.el-checkbox__inner::after{
+            border-color:#00eeee
+        }
+      }
+      .tree-div >>> .el-tree-node__content:hover {
+        background-color: #207087;
+        color: #ffffff;
+      }
+      .tree-div >>> .el-tree-node__content {
+        height: 32px;
+      }
+      .tree-div {
+        // margin-top:7%;
+        // background-image: url('../../../../assets/tunnelTree/bj.png');
+        // border: 1px solid #50DCF5;
+        // padding-top: 6px;
+        background-size: 100% 100%;
+        border-radius: 5px;
+        height: 410px;
+        // width: 738px;
+        margin-bottom: 10px;
+        // overflow-x: scroll;
+        overflow: auto;
+        .custom-tree-node{
+          .iconfont{
+              color:#00eeee;
+              position: relative;
+              top: 1px;
+              margin-right: 6px;
+              }
+        }
+        >>> .tunnel {
+          background: url("../../../../../public/img/tunnel.png") no-repeat center center;
+          content: "";
+          display: block;
+          width: 15px;
+          height: 15px;
+          font-size: 15px;
+          background-size: 15px;
+          margin: 0 10px;
+        }
+        // >>> .el-tree > .el-tree-node.is-expanded > .el-tree-node__content::before {
+        //   content: "";
+        //   border-left: 1px dashed #006a78;
+        //   height: 9px;
+        //   width: 1px;
+        //   position: absolute;
+        //   left: 15px;
+        //   top: 22px;
+        // }
+        // >>> .el-tree-node__content {
+        //   position: relative;
+        //   // padding-left:85px !important;
+        //    .el-checkbox__inner {
+        //   margin-top:11px;
+        // }
+        // }
+        >>>.el-checkbox__input .el-checkbox__inner,.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner{
+          background: transparent;
+          border-color: #00eeee;
+          &::after{
+            border-color: #00eeee;
+          }
+        }
+        >>>.el-checkbox__inner:hover,.el-checkbox__inner:focus{
+          border-color: #00eeee;
+        }
+        >>>.el-checkbox__label{
+          color: #00eeee!important;
+          padding-left: 6px;
+        }
+        >>> .el-tree-node__children .el-tree-node__content::before {
+          content: "";
+          border-left: 1px dashed #006a78;
+          height: 100%;
+          width: 1px;
+          position: absolute;
+          left: 15px;
+          top: -12px;
+        }
+        >>> .el-tree-node__children .el-tree-node__content::after {
+          content: "";
+          border-top: 1px dashed #006a78;
+          height: 1px;
+          width: 10px;
+          position: absolute;
+          left:16px
+        }
+        >>> .el-tree .el-tree-node__expand-icon.expanded {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        >>> .el-tree .el-icon-caret-right:before {
+          background: url("../../../../../public/img/jia.png") no-repeat center center;
+          content: "";
+          display: block;
+          width: 18px;
+          height: 18px;
+          font-size: 18px;
+          background-size: 18px;
+        }
+        >>> .el-tree .el-tree-node__expand-icon.expanded.el-icon-caret-right:before {
+          background: url("../../../../../public/img/jian.png") no-repeat center center;
+          content: "";
+          display: block;
+          width: 18px;
+          height: 18px;
+          font-size: 18px;
+          background-size: 18px;
+        }
+        >>> .el-tree-node__expand-icon.is-leaf::before {
+          // display: none;
+          visibility: hidden;
+        }
+        >>> .el-tree-node:focus > .el-tree-node__content {
+          background-color: #207087;
+          color: #ffffff;
+        }
+      }
+      .tree-div::-webkit-scrollbar{
+         display: none;
+      }
+
+      //弹出框
+    //   >>>.el-dialog__wrapper .el-dialog{
+    //             border:1px solid #00eeee;
+    //             border-radius: 4px;
+    //             width: 350px;
+    //             // height: 710px;
+    //             background-image:none!important;
+    //             /* background: linear-gradient(to bottom, rgba(1,34,49,0.5) 0%, rgba(2,160,219,0.15) 100%) */
+    //             background-image: url(/static/img/bgTwo.a178d248.png)!important;
+    //             background-size: 100% 100%;
+    //             .el-dialog__header{
+    //               text-align: left;
+    //               margin:0 auto;
+    //               padding:0 0 0 16px;
+    //               background: rgba(83,227,253,0.15);
+    //               width: 100%;
+    //               height: 34px;
+    //               line-height: 34px;
+    //               position: relative;
+    //               .el-dialog__headerbtn{
+    //                 border:none;
+    //                 top: 1px;
+    //                 right: 5px;
+    //               }
+    //             }
+    //             .el-dialog__title{
+    //                 line-height: 34px;
+    //                 color:#00eeee;
+    //                 font-size: 16px;
+    //               }
+    //             }
+    //             >>>.el-dialog__headerbtn .el-dialog__close{
+    //               color: #fff;
+    //               &:hover{
+    //                 color: #00eeee
+    //               }
+    //             }
+}
